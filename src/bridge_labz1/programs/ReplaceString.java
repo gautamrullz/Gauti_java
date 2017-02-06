@@ -13,6 +13,7 @@ public class ReplaceString {
 				System.out.println("user name too short 'Re-enter'");
 					s=scn.nextLine();
 				}
+			scn.close();
 			
 			System.out.println("hello "+s+" how are you?");
 		
