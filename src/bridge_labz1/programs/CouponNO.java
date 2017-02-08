@@ -2,7 +2,7 @@ package bridge_labz1.programs;
 
 import java.util.Random;
 import java.util.Scanner;
-
+// not a proper output
 public class CouponNO {
 	static int[] arr;
 	static int[] coupon;
