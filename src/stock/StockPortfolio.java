@@ -33,6 +33,5 @@ public class StockPortfolio {
 	System.out.println("........................TotalStock");
 	System.out.println("........................["+s.totalStock+"]");
 	
-	
 	}
 }
