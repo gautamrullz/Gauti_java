@@ -42,12 +42,12 @@ public class TicTacToe {
 				 }
 				 if(arrchar[0][0]=='0'&&arrchar[0][1]=='0'&&arrchar[0][2]=='0'||
 							arrchar[1][0]=='0'&&arrchar[1][1]=='0'&&arrchar[1][2]=='0'||
-							arrchar[2][0]=='0'&&arrchar[2][1]=='0'&&arrchar[2][2]=='0'||
-							arrchar[0][0]=='0'&&arrchar[1][0]=='0'&&arrchar[2][0]=='0'||
-							arrchar[0][1]=='0'&&arrchar[1][1]=='0'&&arrchar[2][1]=='0'||
-							arrchar[0][2]=='0'&&arrchar[1][2]=='0'&&arrchar[2][2]=='0'||
-							arrchar[0][0]=='0'&&arrchar[1][1]=='0'&&arrchar[2][2]=='0'||
-							arrchar[2][0]=='0'&&arrchar[1][1]=='0'&&arrchar[0][2]=='0')
+								arrchar[2][0]=='0'&&arrchar[2][1]=='0'&&arrchar[2][2]=='0'||
+									arrchar[0][0]=='0'&&arrchar[1][0]=='0'&&arrchar[2][0]=='0'||
+										arrchar[0][1]=='0'&&arrchar[1][1]=='0'&&arrchar[2][1]=='0'||
+											arrchar[0][2]=='0'&&arrchar[1][2]=='0'&&arrchar[2][2]=='0'||
+												arrchar[0][0]=='0'&&arrchar[1][1]=='0'&&arrchar[2][2]=='0'||
+													arrchar[2][0]=='0'&&arrchar[1][1]=='0'&&arrchar[0][2]=='0')
 					{
 						return "Player 1 won";
 					}
@@ -80,12 +80,12 @@ public class TicTacToe {
 				
 				if(arrchar[0][0]=='X'&&arrchar[0][1]=='X'&&arrchar[0][2]=='X'||
 						arrchar[1][0]=='X'&&arrchar[1][1]=='X'&&arrchar[1][2]=='X'||
-						arrchar[2][0]=='X'&&arrchar[2][1]=='X'&&arrchar[2][2]=='X'||
-						arrchar[0][0]=='X'&&arrchar[1][0]=='X'&&arrchar[2][0]=='X'||
-						arrchar[0][1]=='X'&&arrchar[1][1]=='X'&&arrchar[2][1]=='X'||
-						arrchar[0][2]=='X'&&arrchar[1][2]=='X'&&arrchar[2][2]=='X'||
-						arrchar[0][0]=='X'&&arrchar[1][1]=='X'&&arrchar[2][2]=='X'||
-						arrchar[2][0]=='X'&&arrchar[1][1]=='X'&&arrchar[0][2]=='X')
+							arrchar[2][0]=='X'&&arrchar[2][1]=='X'&&arrchar[2][2]=='X'||
+								arrchar[0][0]=='X'&&arrchar[1][0]=='X'&&arrchar[2][0]=='X'||
+									arrchar[0][1]=='X'&&arrchar[1][1]=='X'&&arrchar[2][1]=='X'||
+										arrchar[0][2]=='X'&&arrchar[1][2]=='X'&&arrchar[2][2]=='X'||
+											arrchar[0][0]=='X'&&arrchar[1][1]=='X'&&arrchar[2][2]=='X'||
+												arrchar[2][0]=='X'&&arrchar[1][1]=='X'&&arrchar[0][2]=='X')
 				{
 				return "Player 2 won";
 				}

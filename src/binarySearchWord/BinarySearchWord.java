@@ -9,13 +9,16 @@ import java.util.Scanner;
 public class BinarySearchWord {
 	public static void main(String[] args) throws IOException {
 		Scanner scn =new Scanner(System.in);
-		String s="";	
+		String s="",ts="";
 		FileReader f=new FileReader("/home/bridgeit/Desktop/Gauti_java/Start/abc.txt");
 		BufferedReader b= new BufferedReader(f);
-		s=b.readLine();
+		while((s=b.readLine())!=null){
+			System.out.println(s);
+			ts+=s;
+			}
 		b.close();
 		System.out.println(s);
-		String[] str=s.split(",");
+		String[] str=ts.split(",");
 		str=sort(str);
 		System.out.println();
 		System.out.println("search a string");
@@ -51,7 +54,6 @@ public class BinarySearchWord {
 					str[j+1]=temp;
 				}
 			}
-			
 		}
 		for(String ele :str){
 			System.out.println(ele);
