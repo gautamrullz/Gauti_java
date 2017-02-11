@@ -17,7 +17,7 @@ public class TestPeopleQueue {
 				System.out.println("1. Deposit");
 				System.out.println("2. Withdraw");
 				System.out.println("3. Show balance");
-				System.out.println("4. join the queue");
+				System.out.println("4. new person came join the queue");
 				double d;
 				int ch=scn.nextInt();
 			if(ch==1){

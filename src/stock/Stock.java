@@ -26,7 +26,7 @@ public class Stock {
 	@Override
 	public String toString() {
 		
-		return "["+stockName+"  "+noOfShare+"  "+sharePrice+"  "+stockPrice+"]";
-	}
+		return (stockName+"  |  "+noOfShare+"  |  "+sharePrice+"   |   "+stockPrice);
 	
+	}
 }

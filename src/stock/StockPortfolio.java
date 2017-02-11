@@ -24,7 +24,7 @@ public class StockPortfolio {
 		obj.calculateStock();
 		q.add(obj);
 	}
-	System.out.println("StockName | NoOShare | Shareprice | Stock");
+	System.out.println("StockName\tNoOShare\tShareprice\tStock");
 	for (int i = 0; i < noOfStock; i++) {
 		System.out.println(q.poll());
 	}
