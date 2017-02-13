@@ -17,7 +17,7 @@ public class Stock {
 	}
 	
 	double calculateStock() {
-		double dec=((10*sharePrice)/100);
+		double dec=((8*sharePrice)/100);
 		stockPrice=dec*noOfShare;
 		totalStock+=stockPrice;
 		return stockPrice;
@@ -26,7 +26,7 @@ public class Stock {
 	@Override
 	public String toString() {
 		
-		return (stockName+"  |  "+noOfShare+"  |  "+sharePrice+"   |   "+stockPrice);
+		return (stockName+" | "+noOfShare+" | "+sharePrice+" | "+stockPrice);
 	
 	}
 }

@@ -13,7 +13,6 @@ public class StockPortfolio {
 	Queue<Stock> q=new LinkedList<Stock>();
 
 	for(int i=1;i<=noOfStock;i++){
-		
 		System.out.println(i+"."+"Enter StockName: ");
 		String s=scn.next();
 		System.out.println(i+"."+"No of Share: ");
