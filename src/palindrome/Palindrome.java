@@ -1,38 +1,29 @@
 package palindrome;
 
+import java.util.Scanner;
+
 public class Palindrome {
 	public static void main(String[] args) {
-
-	String s="madadam";
+	Scanner scn =new Scanner(System.in);	
+	System.out.println("Enter a String to check its palindrome or not");
+	String s=scn.next();
+	scn.close();
 	char[] c=s.toCharArray();
-	System.out.println(checkPalindrome(c));
+	System.out.println(checkPalindrome(c,(c.length/2)));
+	
 	
 	}
-	static boolean checkPalindrome(char[] c){
-	Deque d=new Deque(c.length);
-		
-		for (int i = 0; i < c.length; i++) {
-			d.addRear(c[i]);
+	static boolean checkPalindrome(char[] c,int size){
+		Deque d=new Deque(100);
+		for (int i = 0; i <c.length; i++) {
+			d.addFront(c[i]);
 		}
 		
-		//if(d.size()1){
-		while(d.size()>1){
-			if(d.rear==d.front){
-				break;
-			}
-			if(!((char)d.removeFront()==(char)d.removeRear())){
-				return false; 
-			}
-		//}
-		}
-		
-		/*while(d.isEmpty()){
-			
+		for (int i = 0; i <size; i++) {	
 			if(!((char)d.removeFront()==(char)d.removeRear())){
 				return false; 
 			}
 		}
-		*/
 		return true;
 	}
 }

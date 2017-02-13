@@ -12,11 +12,12 @@ public class Deque {
 		length=0;
 	}
 	
+		//inserting from the rear side
 	boolean addRear(Object ele){
 		
 		if(rear==-1){
-			front=0;
-			rear=0;
+			front=maxSize/2;
+			rear=maxSize/2;
 			ple[rear]=ele;
 			length++;
 			return true;
@@ -30,17 +31,19 @@ public class Deque {
 		throw new StackOverflowError();
 	}
 	
+		//inserting from the front side
 	boolean addFront(Object ele){
 		
-		if(rear==-1){
-			front=0;
-			rear=0;
-			ple[rear]=ele;
+		if(front==-1){
+			front=maxSize/2;
+			rear=maxSize/2;
+			
+			ple[front]=ele;
 			length++;
 			return true;
 		}
-		else if(front>=0){
-			ple[++front]=ele;
+		else if(front-1>0){
+			ple[--front]=ele;
 			length++;
 			return true;
 		}
@@ -48,25 +51,31 @@ public class Deque {
 		throw new StackOverflowError( );
 	}
 	
+		//remove from front and return the value
 	Object removeFront(){
-		if(rear<=size()||rear==front){
+		if(front<=rear){
 		length--;
 		return ple[front++];
 		}
 		return null;
 	}
 	
+		//remove from rear and return the value
 	Object removeRear(){
-		if(front<=size()||rear==front){
+		if(rear>=front){
 		length--;
 		return ple[rear--];
 		}
 		return null;
+		
+		
 	}
+	
 	boolean isEmpty(){
 		
-		return front==-1||front==rear;
+		return front==-1||rear==-1||front==rear;
 	}
+	
 	int size(){
 		return length;
 	}
