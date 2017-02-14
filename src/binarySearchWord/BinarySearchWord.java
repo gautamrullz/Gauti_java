@@ -17,12 +17,13 @@ public class BinarySearchWord {
 			ts+=s;
 			}
 		b.close();
-		System.out.println(s);
 		String[] str=ts.split(",");
 		str=sort(str);
+		
 		System.out.println();
 		System.out.println("search a string");
 		String s1=scn.next();
+		scn.close();
 		int first=0;
 		int last=str.length-1;
 		int mid;
@@ -55,6 +56,7 @@ public class BinarySearchWord {
 				}
 			}
 		}
+		
 		for(String ele :str){
 			System.out.println(ele);
 		}

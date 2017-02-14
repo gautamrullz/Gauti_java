@@ -92,10 +92,10 @@ public class LinkedList {
 		if(size()==0){
 			return "[null]";
 		}
-		String s="["+start.ele+",";
+		String s="["+start.ele;
 		Node p=start;
 		while((p=p.next)!=null){
-			s+=p.ele+" ,";
+			s+=", "+p.ele;
 		}
 		s+="]";
 		return s;
