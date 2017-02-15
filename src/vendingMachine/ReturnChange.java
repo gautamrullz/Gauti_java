@@ -21,7 +21,7 @@ public class ReturnChange {
 		System.out.println("5    * "+o5);
 		System.out.println("2    * "+o2);
 		System.out.println("1    * "+o1);
-		System.out.println("Tolal Change :"+(h500+h100+t50+t20+t10+o5+o2+o1));
+		System.out.println("Tolal Change :"+(ths+h500+h100+t50+t20+t10+o5+o2+o1));
 
 		
 	}

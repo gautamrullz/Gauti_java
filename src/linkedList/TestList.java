@@ -9,10 +9,10 @@ import java.util.Scanner;
 public class TestList {
 	public static void main(String[] args) throws IOException {
 		FileWriter fw=new FileWriter("/home/bridgeit/Desktop/"
-				+ "Gauti_java/Start/txt/list.txt");
+				+ "Gauti_java/Start/txt/list1.txt");
 		
 		FileReader fs=new FileReader("/home/bridgeit/Desktop/"
-				+ "Gauti_java/Start/txt/list1.txt");
+				+ "Gauti_java/Start/txt/list.txt");
 		
 		BufferedReader br =new BufferedReader(fs);
 		LinkedList ll=new LinkedList();

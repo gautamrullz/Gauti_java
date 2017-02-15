@@ -12,6 +12,8 @@ public class Anagram {
 		scn.close();
 		s1=s1.replace(" ","");
 		s2=s2.replace(" ","");
+		s1=s1.toLowerCase();
+		s2=s2.toLowerCase();
 		System.out.println(findAnagram(s1,s2));
 	}
 
