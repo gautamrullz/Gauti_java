@@ -1,7 +1,9 @@
 package regex;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.text.*;
 import java.util.Date;
 import java.util.Scanner;
 import java.util.regex.Matcher;
@@ -9,16 +11,16 @@ import java.util.regex.Pattern;
 
 public class RegEx {
 	
-	static String s=" Hello <<name>>, We have your full name as <<full name>>"
-			+ " in our system. your contact number is 91-xxxxxxxxxx. "
-			+ "Please,let us know in case of any clarification "
-			+ "Thank you BridgeLabz 01/01/2016.";
+	static String s="";
 	static String ptrn2="<<full\\sname>>";
 	static String ptrn1="<<name>>";
 	static String ptrn3="...xxxxxxxxxx";
 	static String ptrn4="01/01/2016";
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br=new BufferedReader(new FileReader("/home/bridgeit/Desktop/Gauti_java/Start/src/regex/message.txt"));
+		s=br.readLine();
+		br.close();
 		Scanner scn=new Scanner(System.in);
 		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 		Date date = new Date();
@@ -27,6 +29,7 @@ public class RegEx {
 		String name=scn.nextLine();
 		System.out.println("enter your no.");
 		String no=scn.next();
+		scn.close();
 		String[] s1=name.split(" ");
 		String regx=s1[0];
 		Matcher m;
