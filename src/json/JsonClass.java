@@ -1,37 +1,42 @@
 package json;
 import java.io.FileWriter;
+import java.util.Scanner;
+
 import org.json.simple.*;
 
 public class JsonClass {
-		static String name ="Basmati";
-		static int weight=100;
-		static double price=45.00;
+		static String name;
+		static String brand;
+		static int weight;
+		static double price;
 	
 	   public static void main(String[] args) throws Exception{
-		   JSONObject obj = new JSONObject();
-	        JSONArray list1 = new JSONArray();
-	        list1.add(name);
-	        list1.add(weight+"kg");
-	        list1.add(price+"rs per_kg");
-	        obj.put("Rice", list1);
- 
-	        JSONArray list2= new JSONArray();
-	        list2.add("Bagrrys");
-	        list2.add("70"+"kg");
-	        list2.add("35"+"rs per_kg");
-
-	        obj.put("Wheat", list2);
-	        JSONArray list3= new JSONArray();
-	        list3.add("Rajdhani");
-	        list3.add("50"+"kg");
-	        list3.add("75"+"rs per_kg");
-	        obj.put("Pulse", list3);
-	        
-	        FileWriter file = new FileWriter("/home/bridgeit/Desktop/Gauti_java"
-	        					+ "/Start/src/json/jsonFile/json.txt"); 
+		   	FileWriter file = new FileWriter("/home/bridgeit/Desktop/Gauti_java"
+					+ "/Start/src/json/jsonFile/test.json"); 
+		   	Scanner scn=new Scanner(System.in);
+		   	JSONArray list=null;
+		   	JSONObject obj= new JSONObject();
+	        System.out.println("enter no for product you have");
+	        int n=scn.nextInt();
+	        for(int i=1;i<=n;i++){
+	        	
+	        	System.out.println(i+".name of the product");
+	        	name=scn.next();
+	        	System.out.println(i+".brand....");
+	        	brand=scn.next();
+	        	System.out.println(i+".Quantity in kg");
+	        	weight=scn.nextInt();
+	        	System.out.println(i+".price per kg");
+	        	price=scn.nextDouble();
+	        	list= new JSONArray();
+	       
+	        	list.add("brand  :"+brand);
+		        list.add("weight :"+weight+"kg");
+		        list.add("price  :"+price+"rs per_kg");
+		        obj.put(name, list);
+	        }
 	        file.write(obj.toJSONString());
 	        file.flush();
-	        System.out.println(obj);
+	      
 	   }
-	
 }
