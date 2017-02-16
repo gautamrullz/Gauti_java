@@ -11,6 +11,7 @@ public class ReturnChange {
 		Scanner scn =new Scanner(System.in);
 		System.out.println("Enter the amount to get a change of that");
 		int amount=scn.nextInt();
+		scn.close();
 		change(amount);
 		System.out.println("1000 * "+ths);
 		System.out.println("500  * "+h500);
