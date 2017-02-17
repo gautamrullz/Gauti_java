@@ -18,7 +18,7 @@ public class JsonClass {
 		   	JSONObject obj= new JSONObject();
 	        System.out.println("enter no for product you have");
 	        int n=scn.nextInt();
-	        for(int i=1;i<=n;i++){
+	        for(int i=1;i<n+1;i++){
 	        	
 	        	System.out.println(i+".name of the product");
 	        	name=scn.next();
