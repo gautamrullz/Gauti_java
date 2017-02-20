@@ -1,4 +1,4 @@
-package cliniqueManagementProgramme;
+package cliniqueManagementProgram;
 
 public class Test {
 
