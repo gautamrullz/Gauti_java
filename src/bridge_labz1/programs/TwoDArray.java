@@ -10,7 +10,7 @@ public class TwoDArray {
 		
 		System.out.println("press 1 for integer Array[] :");
 		System.out.println("press 2 for double Array[] :");
-		System.out.println("press 3 for boolean Array[] :");
+		//System.out.println("press 3 for boolean Array[] :");
 		int in=scn.nextInt();
 		System.out.println("enter row");
 		int row=scn.nextInt();
@@ -36,10 +36,10 @@ public class TwoDArray {
 				e.printStackTrace();
 			}
 			break;
-		case 3:
+		/*case 3:
 			getBooleanArray();
-			break;
-		default:
+			break; */
+		 	default:
 			System.out.println("invalid input");
 		}
 	}
@@ -49,8 +49,9 @@ public class TwoDArray {
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < coll; j++) {
 				
-				int p=arrInt[i][j];
+				System.out.print(arrInt[i][j]+" ");
 			}
+			System.out.println();
 		}
 	}
 
