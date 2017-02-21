@@ -18,7 +18,6 @@ public class AppointmentTest {
 	Queue<Patients> q= new LinkedList<>();
 	int dinc=0;
 	
-	 
 	public void addDoctor() throws Exception{
 		FileReader fr=new FileReader("/home/bridgeit/Desktop/Gauti_java/Start/txt/cliniqueDoc.json");
 		JSONParser par= new JSONParser();

@@ -6,6 +6,5 @@ public class Test {
 		AppointmentTest ap=new AppointmentTest();
 		ap.getAppointment();
 		//ap.addDoctor();
-		
 	}
 }
