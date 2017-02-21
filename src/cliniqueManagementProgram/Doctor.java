@@ -1,4 +1,4 @@
-package cliniqueManagementProgramme;
+package cliniqueTest;
 
 public class Doctor {
 	private int doctorId;
@@ -28,7 +28,7 @@ public class Doctor {
 		return doctorId;
 	}
 
-	public String getTimeing1() {
+	public String getTimeing() {
 		return timeing;
 	}
 	@Override

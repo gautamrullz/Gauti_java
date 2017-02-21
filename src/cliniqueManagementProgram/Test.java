@@ -1,4 +1,4 @@
-package cliniqueManagementProgram;
+package cliniqueTest;
 
 public class Test {
 
@@ -6,5 +6,12 @@ public class Test {
 		AppointmentTest ap=new AppointmentTest();
 		ap.getAppointment();
 		//ap.addDoctor();
+		/*if(!ap.getDocterDetail()){
+			System.out.println("!!!!!!<<<no such Doctor available>>>!!!!!!");
+		}
+		*/
+		//if(!ap.getPatientDetail()){
+		//	System.out.println("!!!!!!<<<no such Patient available>>>!!!!!!");
+		//}
 	}
 }

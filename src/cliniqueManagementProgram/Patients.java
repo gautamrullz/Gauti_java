@@ -1,10 +1,10 @@
-package cliniqueManagementProgram;
+package cliniqueTest;
 
 public class Patients {
 	private int patientId;
 	private String name;
 	private long mobNo;
-	int age;
+	private int age;
 	
 	public Patients(int patientId,String name,long mobNo,int age) {
 		this.patientId=patientId;
@@ -20,6 +20,9 @@ public class Patients {
 	}
 	public long getMobNo() {
 		return mobNo;
+	}
+	public int getAge(){
+		return age;
 	}
 	@Override
 	public String toString() {
