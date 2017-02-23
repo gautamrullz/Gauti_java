@@ -1,43 +1,52 @@
-package cliniqueTest;
+package cliniqueManagementProgram;
 
-public class Doctor {
+public class Doctor 
+{
 	private int doctorId;
 	private String name;
 	private String Specialization;
 	private String timeing;
 	int noOfPatient=0;
 	
-	public Doctor(int id,String name,String Specialization, String timeing) {
+	public Doctor(int id,String name,String Specialization, String timeing) 
+	{
 		this.doctorId=id;
 		this.name=name;
 		this.Specialization=Specialization;
 		this.timeing=timeing;
 	}
-	public Doctor(){
+	public Doctor()
+	{
 		
 	}
-	public String getName() {
+	public String getName() 
+	{
 		return name;
 	}
 	
-	public String getSpecialization() {
+	public String getSpecialization() 
+	{
 		return Specialization;
 	}
 
-	public int getId() {
+	public int getId() 
+	{
 		return doctorId;
 	}
 
-	public String getTimeing() {
+	public String getTimeing() 
+	{
 		return timeing;
 	}
 	@Override
-	public String toString() {
+	public String toString() 
+	{
 		
 		return "doctorId :"+doctorId+" name :"+name+
 				" Specialization :"+Specialization+" timeing :"+timeing;
 	}
-	public int patientInQueue(){
+	public int patientInQueue()
+	{
 		
 		return ++noOfPatient;
 	}
